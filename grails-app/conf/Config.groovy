@@ -69,5 +69,15 @@ log4j = {
     warn   'org.mortbay.log'
 }
 
-
-     
+fileuploader {
+	avatar {
+		maxSize = 1024 * 256 //256 kbytes
+		allowedExtensions = ["jpg","jpeg","gif","png"]
+		path = "/tmp/avatar/"
+	}
+	docs {
+		maxSize = 1000 * 1024 * 4 //4 mbytes
+		allowedExtensions = ["doc", "docx", "pdf", "rtf"]
+		path = "/tmp/docs/"
+	}
+}

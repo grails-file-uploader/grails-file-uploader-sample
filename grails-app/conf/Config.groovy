@@ -65,6 +65,8 @@ log4j = {
 	       'org.codehaus.groovy.grails.orm.hibernate', // hibernate integration
 	       'org.springframework',
 	       'org.hibernate'
+	
+	debug  'grails.app'
 
     warn   'org.mortbay.log'
 }

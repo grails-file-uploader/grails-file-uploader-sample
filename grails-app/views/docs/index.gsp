@@ -27,7 +27,7 @@
 					</tr>
 					<tr>
 						<td><b>Size</b></td>
-						<td>${f.size}</td>
+						<td><fileuploader:prettysize size="${f.size}" /> (${f.size})</td>
 					</tr>
 					<tr>
 						<td><b>Extension</b></td>
@@ -47,6 +47,11 @@
 							<fileuploader:download 	id="${f.id}"
 													errorAction="index"
 													errorController="docs">Click here to download</fileuploader:download></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<g:link controller="docs" action="delete" id="${f.id}">Click here to delete</g:link></td>
 					</tr>					
 				</table>
 			</g:each>
